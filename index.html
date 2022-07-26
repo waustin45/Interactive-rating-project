@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+<main class="container">
+  <div class="star-icon"><img src="/interactive-rating-component-main/images/icon-star.svg"></div>
+  <div class="Rating-statement">
+    <h1>How did we do?</h1>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+  </div>
+  <div class="Rating-click">
+     <input class= "ratingbutton"  type="button" id="button1" name="button1" value="1" onclick="hitreview()"> 
+     <input class= "ratingbutton"  type="button" id="button2" name="button2" value="2" onclick="hitreview()">
+     <input class= "ratingbutton"  type="button" id="button3" name="button3" value="3" onclick="hitreview()">
+     <input class= "ratingbutton"  type="button" id="button4" name="button4" value="4" onclick="hitreview()">
+     <input class= "ratingbutton"  type="button" id="button5" name="button5" value="5" onclick="hitreview()">
+    </div>
+
+  <div class="button-container"><button class="submit-button" onclick="submitreview()">Submit</button></div>
+</main>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+<div class="review-output">  </div>
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
