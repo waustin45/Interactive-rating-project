@@ -26,10 +26,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+p {
+    font-family: Outfit;
+    font-weight: 400;
+}
 .star-icon img {
     width: 35%;
     aspect-ratio: 1;
 }
+ h1 {
+    font-family: Outfit;
+    font-weight: 700;
+ }
 
 .Rating-statement h1 {
     color: white;
@@ -55,9 +63,9 @@ body {
     color: hsl(217, 12%, 63%);
     cursor: pointer;
 }
-.ratingbutton:hover {
+.ratingbutton:focus{
     background-color: hsl(216, 12%, 54%, .5);
-    transition: .75s;
+    
 
 }
 .submit-button {
@@ -72,6 +80,8 @@ body {
     color: white;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: Outfit;
+    font-weight: 700;
 }
 .submit-button:hover {
     background-color: hsl(216, 12%, 54%, .5);
@@ -89,13 +99,15 @@ cursor: pointer;
     padding: 2em;
     border-radius: 25px;
     width: 21em;
+    aspect-ratio: 1;
     position: absolute;
     margin: auto;
     top:50%;
-    left:50%;
+    left:51%;
     transform:translate(-50%, -50%);
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 .thankyou {
 color: white;
@@ -114,6 +126,123 @@ color: white;
 }
 
 .review-image img {
-    width: 10em;
+    width: 5em;
     aspect-ratio: 1;
+}
+.attribution {
+    margin-top: 60px;
+    color: white;
+}
+
+@media (max-width: 375px) {
+    .container {
+        background-color: hsl(213, 19%, 18%);
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        border-radius: 25px;
+        width: 15em;
+    }
+    .star-icon {
+        border-radius: 50%;
+        background-color:  hsl(216, 12%, 54%, .25);
+        
+        width: 30px;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .star-icon img {
+        width: 35%;
+        aspect-ratio: 1;
+    }
+    
+    .Rating-statement h1 {
+        color: white;
+    }
+    
+    .Rating-statement p {
+        color: hsl(217, 12%, 63%) ;
+        font-size: 12px;
+    }
+    .Rating-click {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    
+    }
+    .ratingbutton {
+        background-color:   hsl(216, 12%, 54%, .25);
+        border: none;
+        border-radius: 50%;
+        width: 3em;
+        aspect-ratio: 1;
+        color: hsl(217, 12%, 63%);
+        cursor: pointer;
+    }
+    .ratingbutton:hover {
+        background-color: hsl(216, 12%, 54%, .5);
+        transition: .75s;
+    
+    }
+    .submit-button {
+        background-color:  hsl(25, 97%, 53%);
+        border: none;
+        width: 100%;
+        border-radius: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .submit-button:hover {
+        background-color: hsl(216, 12%, 54%, .5);
+        transition: .75s;
+    
+    }
+    
+    .buttoncss {
+    cursor: pointer;
+    }
+    .review-container {
+        background-color: hsl(213, 19%, 18%);
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        border-radius: 25px;
+        width: 17em;
+        height: 20em;
+        position: absolute;
+        margin: auto;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .thankyou {
+    color: white;
+    }
+    .appreciate {
+        color: hsl(217, 12%, 63%) ;
+        font-size: 15px;
+    }
+    .yourrating {
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(216, 12%, 54%, .25);
+        text-align: center;
+        width: 10em;
+        border-radius: 15px;
+        padding: .25em;
+    }
+    .attribution {
+        margin-top: 55px;
+        color: white;
+    }
 }

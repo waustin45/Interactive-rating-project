@@ -24,8 +24,9 @@ function submitreview() {
     console.log(finalrating);
     document.querySelector(".review-output").innerHTML = 
     `
+   
     <div class="review-container">
-    <div class="review-image"><img src="/illustrationthankyou.svg alt="iamge"></div>
+    <div class="review-image"><img src="/illustrationthankyou.svg" alt="iamge"></div>
    <div class="yourrating"> You selected ${finalrating} out of 5 </div>
 
   <div class="thankyou">Thank you!</div>
@@ -33,6 +34,16 @@ function submitreview() {
   <div class="appreciate">We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!</div>
     </div>
+    <style type="text/css>
+    #main {
+        display: none;
+    }
+    @media (max-width: 375px) {
+        #main {
+            display: none;
+        }
+    }
+    </style>
     `
     
 };
